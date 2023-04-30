@@ -16,5 +16,5 @@ class GradientInformation:
 
 GradientMasterVector: TypeAlias = Dict[str, GradientMaster]
 GradientInformationVector: TypeAlias = Dict[str, GradientInformation]
-PartitionTrialVector: TypeAlias = Dict[str, int]
+PartitionTrialVector: TypeAlias = Dict[str, float]
 

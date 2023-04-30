@@ -9,6 +9,8 @@ def round_to_given_unit(x: float, unit: int) -> int:
 
 
 def mod_with_unit(numerator: int, denominator: int, unit: int) -> int:
+    if denominator == 1:
+        return numerator % unit
     divided = round_to_given_unit(numerator / denominator, unit)
     return numerator - divided
 
