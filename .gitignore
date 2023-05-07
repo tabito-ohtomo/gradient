@@ -1,3 +1,4 @@
 .idea/*
 gradient.iml
 .idea
+**/__pycache__/*
