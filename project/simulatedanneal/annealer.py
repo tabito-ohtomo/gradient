@@ -45,8 +45,8 @@ def random_zero_to_floors_with_unit(number: int, unit: int):
 
 def optimize_by_simulated_annealing(amount: int, ideal_partition_vector: PartitionTrialVector, gradient_informations: GradientInformationVector, partition_minimum_unit: int) -> PartitionTrialVector:
     problem = PartitionProblem(ideal_partition_vector, gradient_informations, amount, partition_minimum_unit)
-    auto_schedule = problem.auto(minutes=1)
-    problem.set_schedule(auto_schedule)
+    # auto_schedule = problem.auto(minutes=1)
+    # problem.set_schedule(auto_schedule)
     trial_vector, energy = problem.anneal()
     print(trial_vector)
     print(energy)

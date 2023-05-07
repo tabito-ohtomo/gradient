@@ -8,10 +8,10 @@ from project.simulatedanneal.annealer import optimize_by_simulated_annealing
 def main():
     # inputs
     print("Hello World!")
-    amount: int = 9000
+    amount: int = 10000
     partition_minimum_unit: int = 1000
-    gradient_master: GradientMasterVector = {"1": GradientMaster("1", 1), "2": GradientMaster("2", 2)}
-    human_label: Dict[str, str] = {"AAA": "1", "BBB": "1", "CCC": "2"}
+    gradient_master: GradientMasterVector = {"1": GradientMaster("1", 3), "2": GradientMaster("2", 5)}
+    human_label: Dict[str, str] = {"AAA": "1", "BBB": "1", "CCC": "2", "DDD": "2"}
 
     # process
     gradient_informations: GradientInformationVector = create_gradient_information_vector(gradient_master, human_label)
