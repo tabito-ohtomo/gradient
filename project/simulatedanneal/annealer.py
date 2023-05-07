@@ -53,8 +53,8 @@ def optimize_by_simulated_annealing(amount: int, ideal_partition_vector: Partiti
     return trial_vector
 
 def calculate_partition_reasonability(amount: int, ideal_partition: NDArray[Shape["1, *"], Floating], partitioned_amounts: NDArray[Shape["1, *"], Floating]) -> float:
-    print(ideal_partition)
-    print(partitioned_amounts)
+    # print(ideal_partition)
+    # print(partitioned_amounts)
     return np.linalg.norm(np.subtract(np.multiply(1 / amount, ideal_partition), np.multiply(1 / amount, partitioned_amounts)))
 
 
